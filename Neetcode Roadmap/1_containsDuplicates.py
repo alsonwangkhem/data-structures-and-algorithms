@@ -53,3 +53,14 @@ print(best(nums1))
 print(best(nums2))
 print(best(nums3))
 print(best(nums4))
+
+# shortest solution - convert it to a set, which would contain only unique elements and if it's length is the same as the original one, it mean that there are no duplicates
+def shortest(nums):
+    if len(nums) == len(set(nums)):
+        return False
+    return True
+
+print(shortest(nums1))
+print(shortest(nums2))
+print(shortest(nums3))
+print(shortest(nums4))
